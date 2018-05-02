@@ -1,4 +1,4 @@
-# DAT250 - Advanced Software Technologies
+## DAT250 - Advanced Software Technologies
 
 This github repository is being used for:
 
