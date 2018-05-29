@@ -9,7 +9,7 @@ This github repository is being used for
 The course uses the following book as the primary introduction to Java EE technologies
 
 * A. Goncalves: [Beginning Java EE](https://www.apress.com/us/book/9781430246268)
-* [Githib repository](https://github.com/Apress/beg-java-ee-7) with examples from the book chapters 
+* [Github repository](https://github.com/Apress/beg-java-ee-7) with examples from the book chapters 
 
 In addition, we use the following book as background material and supplementary referencing:
 
