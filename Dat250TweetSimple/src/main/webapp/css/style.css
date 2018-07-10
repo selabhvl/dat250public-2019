@@ -1,0 +1,49 @@
+
+.div-container{
+	position: fixed;
+    top: 30%;
+    left: 50%;
+    width:60%;
+    height:400px;
+    transform: translate(-50%, -50%);
+    background-color:#94da8f;
+}
+
+.div-container-title{
+	 text-align: center;
+	 vertical-align:top;
+}
+
+.container-title{
+	margin:0px;
+	margin-top: 6px;
+	height:7%;
+}
+
+.div-container-sender{
+    width: 33%;
+}
+
+.div-container-sender-button{
+	    text-align: center;
+}
+
+.div-form{
+	width:100%;
+	height:13%;
+	display: inline-flex;
+}
+
+.div-container-tweets{
+	height:80%;
+	overflow-y: auto;
+}
+
+.form-tweets{
+	width:100%;
+	display:inline-flex;
+}
+
+.div-container-tweet{
+	text-align:center;
+}
