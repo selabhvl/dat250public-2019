@@ -1,4 +1,5 @@
-## Western Norway University of Applied Sciences
+![Picture missing](assets/markdown-img-paste-20180803102410467.png)
+
 ### DAT250 - Advanced Software Technologies
 
 
