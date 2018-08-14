@@ -44,22 +44,22 @@ public class SessionController implements Serializable {
 
 	public String validateUsernamePassword() {
 		HttpSession session = SessionUtils.getSession();
-		session.setAttribute("username", this.username);
-		return "index";
+		session.setAttribute(Constants.USERNAME, this.username);
+		return Constants.INDEX;
 	}
 
 	public String logout() {
 		HttpSession session = SessionUtils.getSession();
 		session.invalidate();
-		return "login";
+		return Constants.LOGIN;
 	}
 	
 	public String redirect() throws IOException {
 		HttpSession session = SessionUtils.getSession();
-		if (session.getAttribute("username")==null) {
-			SessionUtils.getResponse().sendRedirect("login.xhtml");
+		if (session.getAttribute(Constants.USERNAME)==null) {
+			SessionUtils.getResponse().sendRedirect(Constants.LOGIN + ".xhtml");
 		}
-		return "index";
+		return Constants.INDEX;
 	}
 
 }

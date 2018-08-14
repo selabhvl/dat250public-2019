@@ -27,7 +27,7 @@ import entities.Tweets;
 
 @Path("/tweets")
 @Stateless
-public class TestRest {
+public class RestService {
 
 	@PersistenceContext(unitName = "Dat250TweetAdvanced")
 	private EntityManager em;

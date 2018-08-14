@@ -1,6 +1,7 @@
 package jms;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
@@ -33,8 +34,12 @@ public class DweetListener implements MessageListener {
 			JsonObject json = new JsonObject();
 			json.addProperty("User", tweet.getAuthor());
 			json.addProperty("Message", tweet.getMessage());
-			System.out.println("Sending tweet to dweet...");
-			System.out.println(json);
+			
+			Logger logger = Logger.getLogger(getClass().getName());
+			logger.info("DTWEET User: " + tweet.getAuthor()); 
+			logger.info("DTWEET Message: " + tweet.getMessage());
+			logger.info("DTWEET: Sending tweet to dweet...");
+			logger.info("DTWEET JSON: " + json);
 			try {
 				DweetConnection dc = new DweetConnection();
 				dc.publish(json);

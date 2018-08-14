@@ -7,6 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -39,9 +40,8 @@ public class DweetConnection {
 			throw new NullPointerException();
 
 		thingName = URLEncoder.encode(thingName, "UTF-8");
-
 		URL url = new URL("http" + "://" + API_DWEET_END_POINT + "/dweet/for/" + thingName);
-
+		Logger logger = Logger.getLogger(getClass().getName());
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		connection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
 		connection.setRequestMethod("POST");
@@ -54,7 +54,7 @@ public class DweetConnection {
 		out.close();
 		
 		JsonObject response = readResponse(connection.getInputStream());
-		System.out.println(response);
+		logger.info("DTWEET Platform response: " + response.toString());
 		connection.disconnect();
 
 		return (response.has("this") && response.get("this").getAsString().equals("succeeded"));

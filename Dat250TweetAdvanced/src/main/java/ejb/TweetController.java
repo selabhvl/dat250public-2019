@@ -27,7 +27,7 @@ import entities.Tweet;
 public class TweetController implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	
 	// Injected DAO EJB:
 	@EJB
 	private TweetDao tweetDao;
@@ -46,7 +46,7 @@ public class TweetController implements Serializable {
 		SessionUtils.getUserName();
 		this.tweet.setAuthor(SessionUtils.getUserName());
 		this.tweetDao.persist(this.tweet);
-		return "index";
+		return Constants.INDEX;
 	}
 
 	public Tweet getTweet() {
