@@ -2,7 +2,7 @@
 
 ### High-level Design of an Auction Enterprise Application
 
-In this assignment you will design the Java EE enterprise application that you will then implement in the subsequent programming assignment. The design and implementation of the Java EE application is to be undertaken in groups of 3-4 students.
+In this assignment you will design the Java EE enterprise application that you will then implement in the subsequent programming assignment. The design and implementation of the Java EE application is to be undertaken in groups of 2-4 students.
 
 The main requirements for the application is provided below. In addition, you will find an example design document for an phone book application.  Use this design document as a template for your own design document.
 
