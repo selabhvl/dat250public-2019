@@ -4,7 +4,7 @@
 
 In this assignment you will design the Java EE enterprise application that you will then implement in the subsequent programming assignment. The design and implementation of the Java EE application is to be undertaken in groups of 2-4 students.
 
-The main requirements for the application is provided below. In addition, you will find an example design document for an phone book application.  Use this design document as a template for your own design document.
+The main requirements for the application is provided below. In addition, you will find an example design document for a phone book application.  Use this design document as a template for your own design document.
 
 Each group is required to give a short presentation of their design document (see the course canvas for details), and also submit their design document in PDF format via canvas. It is recommended to structure the design document so that it can be used directly for the presentation.
 
@@ -52,7 +52,7 @@ The application consists of three screens. Only logged-in users can search for p
 
 ##### User Screens
 
-The user screen mock-ups is intended to prototype the application and give a better feeling how the application will work. The user screens are created in HTML at the design stage any graphic program to create the mock-up screens.
+The user screen mock-ups is intended to prototype the application and give a better feeling how the application will work. The user screens are created in HTML. At the design stage you may use any graphic program to create and sketch the mock-up screens.
 
 In `Login Screen` (see figure below) you can enter the application or be forwarded to a page were you can register as new user.
 
@@ -73,7 +73,11 @@ In `User Data Screen` (see figure below) a user can register as a new member, ch
 
 #### The Auction Application
 
-This is the application that you are required to design and implement. The requirement below may be incomplete and it is your task to design a useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either. Keep in mind that you have to implement the application in the three subsequent programming assignments.
+This is the application that you are required to design and implement. 
+
+The requirements below may be incomplete and it is your task to design a useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either. 
+
+Keep in mind that you have to implement the application in the three subsequent programming assignments.
 
 You are given the following requirements and assumptions concerning the application
 
@@ -90,8 +94,7 @@ You are given the following requirements and assumptions concerning the applicat
 5. Customers can filter products by category and free text search.
 6. Customers must login before they can place a bid.
 7. Customers can bid for a product by placing a bid higher than the current bid.
-8. The system should handle concurrency efficiently.
-9. Once sold to a customer, the customer can provide feedback for the product.
+8. Once sold to a customer, the customer can provide feedback for the product.
 
 Note that you are not required to process payment gateways to complete the purchase.
 
