@@ -34,7 +34,7 @@ The following web services should at least be supported:
 - GET `<app-path>/res/auctions/{id}` - which should return a representation of the auction identified by `id`
 - GET `<app-path>/res/auctions/{id}/bids/` - which should return a representation with reference to all current bids in the auction identified by `id`
 - GET `<app-path>/res/auctions/{aid}/bids/{bid}` - which should return a representation of the given bid within the auction identified by `aid`
-- POST `<app-path>/res/auction/{id}/bids?bid={amount}` - which creates a bid with a specified `amount` in the auction identified by `id` and returns a representation of the bid.
+- POST `<app-path>/res/auction/{id}/bids` - which creates a bid with a specified `amount` in the auction identified by `id` and returns a representation of the bid. The `amount` should be contained in the payload of the request (or optionally as a query parameter).
 
 The RESTful web services are required to support both XML and JSON formats as representation of resources. The underlying business methods that provide the services can be implemented using stateless enterprise beans. In addition, you need to use an entity manager to persist and retrieve data from the database.
 
