@@ -75,7 +75,7 @@ In `User Data Screen` (see figure below) a user can register as a new member, ch
 
 This is the application that you are required to design and implement. 
 
-The requirements below may be incomplete and it is your task to design an useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either. 
+The requirements below may be incomplete and it is your task to design a useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either. 
 
 Keep in mind that you have to implement the application in the three subsequent programming assignments.
 
