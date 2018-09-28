@@ -17,9 +17,9 @@ Extend your application with functionality supporting access to the business log
 
 The SOAP-based web service should provide the following operations:
 
-- a method which returns a representation of the auction identified by an id
-- a method which returns a representation of the auctions that the customer can still bid for
-- a method which places a bid of a given amount in an auction and informs as to it is currently the highest bid
+- a method which returns a representation of the auction identified by an identifier.
+- a method which returns a representation of the auctions that the customer can still bid for.
+- a method which places a bid of a given amount in an auction and informs as to it is currently the highest bid.
 
 To test the SOAP service you may either:
 - Develop a test client application
