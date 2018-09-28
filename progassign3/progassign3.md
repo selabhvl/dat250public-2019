@@ -5,7 +5,7 @@ In this assignment you will implement the business logic of the auction applicat
 
 In addition, you will implement SOAP web service method to be provided by the application
 
-## Part 1 - Enterprise Java Beans
+## Part 1 - Enterprise Java Beans (EJBs)
 
 Implement the business logic of the auction application using EJB session beans. Use the entity classes and the database access objects created in assignment 2 to interact with the database. This is covered in chapters 7-9 in the JAVA EE textbook.
 
