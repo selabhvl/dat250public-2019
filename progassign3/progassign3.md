@@ -3,7 +3,7 @@
 
 In this assignment you will implement the business logic of the auction application partly developed in assignment 1 and 2. 
 
-In addition, you will implement SOAP web service method to be provided by the application
+In addition, you will implement SOAP web service method to be provided by the application.
 
 ## Part 1 - Enterprise Java Beans (EJBs)
 
