@@ -2,16 +2,16 @@
 ## Front-end and security
 
 In this assignment you will implement the front-end of the auction application developed in the previous assignments.
-You will alson implement security mechanisms such as proper user authentication and a system for access control to the different parts of the application with an appropriate authorization scheme.
+You will also implement security mechanisms such as proper user authentication and a system for access control to the different parts of the application with an appropriate authorization scheme.
 Finally, you will implement a messaging service in the application to make use of the JMS technology.
 
 ## Part 1 - User interface
 Implement the user interface of the auction application using the JSF framework with Facelets.
 
 ## Part 2 - Security
-Using the standard security features of the Java EE framework, implement a working solution for authentication and access control / authorization in the application. This must include a secure login mechanism using password and username, and the solution should use database storage of the user credentials. In the application, there should be at least two different roles with corresponding access rights. Finally, all communication between client and server should be protected by using the https protocol.
+Using the standard security features of the Java EE framework, implement a working solution for authentication and access control / authorization in the application. This must include a secure login mechanism using password and username, and the solution should use database storage of the user credentials. In the application, there should be at least two different roles with corresponding access rights. Finally, all communication between clients and the server should be protected by using the https protocol.
 
-## Part 3 - JMS 
+## Part 3 - JMS
 When a customer submit the request to place a bid or wins a bid, there are several subsystems that
 need to be notified. For this task, you must setup a JMS topic where you publish this information.
 Two separate subsystems (clients) that subscribe to this topic should be implemented:
@@ -27,5 +27,3 @@ is won by some customer. This part needs to be implemented via JMS (the applicat
 information about winning bids by subscribing to a topic). The Enterprise Application Client
 can place a new bid (preferably by pressing a button), which invokes the SOAP web service
 to place the bid.
-
-
