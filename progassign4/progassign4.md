@@ -19,17 +19,6 @@ Two separate subsystems (clients) that subscribe to this topic should be impleme
 (a) The first sub-system “NotifyBuyer” should be implemented as a message-driven bean. The
 message-driven bean should sent a message to dweet.io via REST similar to the functionality of the Tweet example application.
 
----- START EMAIL to customer X ----
-
-Dear X,
-
-Congratulations! You have won in bidding for product Y.
-
-You can access the product using the following link:
-
-URL=<LINK>
-
----- END EMAIL to customer X ----
 
 (b) The second subsystem is a small Enterprise Application Client.
 When the application starts, it initially retrieves the information about active auctions via
