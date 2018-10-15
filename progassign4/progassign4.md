@@ -3,7 +3,7 @@
 
 In this assignment you will implement the front-end of the auction application developed in the previous assignments.
 You will also implement security mechanisms such as proper user authentication and a system for access control to the different parts of the application with an appropriate authorization scheme.
-Finally, you will implement a messaging service in the application to make use of the JMS technology.
+Finally, you will implement a messaging service in the application that make use of the JMS technology.
 
 ## Part 1 - User interface
 Implement the user interface of the auction application using the JSF framework with Facelets.
