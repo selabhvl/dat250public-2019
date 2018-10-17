@@ -6,24 +6,11 @@ You will also implement security mechanisms such as proper user authentication a
 Finally, you will implement a messaging service in the application that make use of the JMS technology.
 
 ## Part 1 - User interface
-Implement the user interface of the auction application using the JSF framework with Facelets.
+Implement the user interface of the auction application as designed in assignment 1 using the JSF framework with Facelets. Y
 
 ## Part 2 - Security
 Using the standard security features of the Java EE framework, implement a working solution for authentication and access control / authorization in the application. This must include a secure login mechanism using password and username, and the solution should use database storage of the user credentials. In the application, there should be at least two different roles with corresponding access rights. Finally, all communication between clients and the server should be protected by using the https protocol.
 
 ## Part 3 - JMS
-When a customer submit the request to place a bid or wins a bid, there are several subsystems that
-need to be notified. For this task, you must setup a JMS topic where you publish this information.
-Two separate subsystems (clients) that subscribe to this topic should be implemented:
 
-(a) The first sub-system “NotifyBuyer” should be implemented as a message-driven bean. The
-message-driven bean should sent a message to dweet.io via REST similar to the functionality of the Tweet example application.
-
-
-(b) The second subsystem is a small Enterprise Application Client.
-When the application starts, it initially retrieves the information about active auctions via
-the SOAP web service of assignment 2. The list is updated if an auction
-is won by some customer. This part needs to be implemented via JMS (the application gets
-information about winning bids by subscribing to a topic). The Enterprise Application Client
-can place a new bid (preferably by pressing a button), which invokes the SOAP web service
-to place the bid.
+When a customer (user) wins an auction, the application needs to send a message to a Notify-subsystem implemented as a message-driven bean. You should add a JMS topic to your application in which this information can be published and received by a subscribing message-driven bean. The message-driven bean should sent a message to dweet.io via REST similar to the functionality of the advanced tweet example application.
