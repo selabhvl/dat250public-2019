@@ -16,4 +16,4 @@ The course uses the following book as the primary introduction to the Java EE pl
 
 In addition, we use the following tutorial as background material and supplementary referencing
 
-* E. Jendrock et al: [The Java EE Tutorial](https://docs.oracle.com/javaee/7/tutorial/)
+* https://javaee.github.io/tutorial/ 
