@@ -24,7 +24,7 @@ OpenPhoneBook is an application for sharing phone numbers between registered use
 
 ##### Use Cases
 
-The use cases give an overview of the basic functionality to be provided by the application. Usually each use case is subsequently redefined in a set of more precise diagrams. However, in this application this is not necessary since the use cases are simple. Therefore only a single use case diagram (see figure below) is created. This should be sufficient also in the case of your application.
+The use cases give an overview of the basic functionality to be provided by the application. Usually each use case is subsequently redefined in a set of more precise diagrams. However, in this application this is not necessary since the use cases are relatively simple. Therefore only a single use case diagram (see figure below) is created. This should be sufficient also in the case of your application.
 
 * **Register in OpenPhoneBook:** Everyone can register his addresses and phone numbers via a web form.
 * **Update own data:** Users of the OpenPhoneBook can change the data via another web form, e.g., if they have moved and got a new phone number.
@@ -36,7 +36,7 @@ The use cases give an overview of the basic functionality to be provided by the 
 
 The domain model shows the required concepts of the application and their relations. These are in this case *Users*, *Addresses* and *Phone Numbers*. These objects are stored in the database. Classes that encode application logic and helper classes are not part of the domain model.
 
-The OpenPhoneBook application requires concepts shown in the figure below. User names (uname) should be unique and passwords should be mandatory.
+The OpenPhoneBook application requires the concepts shown in the figure below. User names (uname) should be unique and passwords should be mandatory.
 
 ![](assets/domainmodel.png)
 
@@ -73,9 +73,9 @@ In `User Data Screen` (see figure below) a user can register as a new member, ch
 
 #### The Auction Application
 
-This is the application that you are required to design and implement. 
+This is the application that you are required to design and implement.
 
-The requirements below may be incomplete and it is your task to design a useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either. 
+The requirements below may be incomplete and it is your task to design a useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either.
 
 Keep in mind that you have to implement the application in the three subsequent programming assignments.
 
