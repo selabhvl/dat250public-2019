@@ -24,16 +24,18 @@ public class Tweets extends ArrayList<Tweet> {
 	
 	public Tweets() {
 		super();
-		}
-		public Tweets(Collection<? extends Tweet> c) {
+	}
+
+	public Tweets(Collection<? extends Tweet> c) {
 		super(c);
-		}
-		
-		@XmlElement(name = "tweet")
-		public List<Tweet> getTweets() {
+	}
+
+	@XmlElement(name = "tweet")
+	public List<Tweet> getTweets() {
 		return this;
-		}
-		public void setBooks(List<Tweet> tweets) {
+	}
+
+	public void setTweets(List<Tweet> tweets) {
 		this.addAll(tweets);
-		}
+	}
 }

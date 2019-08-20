@@ -27,6 +27,7 @@ public class DweetConnection {
 
 	private JsonParser jsonParser = new JsonParser();
 
+	//Customize for own link 
 	private String thingName = "dat250";
 
 	
