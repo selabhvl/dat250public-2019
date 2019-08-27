@@ -20,7 +20,7 @@ or some other suitable tool you may know from earlier.
 
 The OpenPhoneBook example application should help you to create a proper design document. Use it as template for the application that you are going to develop.
 
-OpenPhoneBook is an application for sharing phone numbers between registered users. Membership is free. Everyone can join the community by registering via a web form. Each logged-in user can search by last name as well as city for phone numbers of other registered users. Furthermore, each user can update his or her own information. Several addresses can be registered by each user and several phone numbers can be associated with an address. To keep it simple, mobile phone numbers are not handled in a special way.
+The OpenPhoneBook is an application for sharing phone numbers between registered users. Membership is free. Everyone can join the community by registering via a web form. Each logged-in user can search by last name as well as city for phone numbers of other registered users. Furthermore, each user can update his or her own information. Several addresses can be registered by each user and several phone numbers can be associated with an address. To keep it simple, mobile phone numbers are not handled in a special way.
 
 ##### Use Cases
 
@@ -85,13 +85,14 @@ You are given the following main requirements and assumptions concerning the app
 2. A device description should contain (at least) the following information:
     * Device name and picture
     * A list of tags/categories capturing capabilities of the device
-    * A URL where the devices provide its data and/or service control service
+    * A URL where the devices provide its data and/or service control service (eventually as a REST microservice)
     * Current status of the device (online, offline, available, not available, ...)
     * Feedback from other users that have used the service provided by the device
 3. IoT devices (sensors or actuators) must be in a published status before they are available for other users
 4. Users can filter devices by tags/categories and free text search.
 5. Users must login before they can register devices, make devices available, and before they can access other devices.
 6. Users can register for using a particular devices, and must then be approved by the owner of the device before it can be accessed.
-7. Once a user de-registers from using a device, the user can provide some feedback on the service provided by the device.
+7. A user should be able to see the list of devices the user is currently registered for, and the application may also provide list of the most popular devices.
+8. Once a user de-registers from using a device, the user can provide some feedback on the service provided by the device.
 
 An optional requirement, if you like to enhance the application. Extend the design so that users can purchase data and control services offered by other users. Note that you are not required to process payment gateways to complete the purchases.
