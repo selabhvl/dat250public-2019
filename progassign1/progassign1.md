@@ -1,8 +1,8 @@
 ## DAT250: Programming Assignment 1
 
-### High-level Design of an Auction Enterprise Application
+### High-level Design of an IoT Exchange Enterprise Application
 
-In this assignment you will design the Java EE enterprise application that you will then implement in the subsequent programming assignment. The design and implementation of the Java EE application is to be undertaken in groups of 2-4 students.
+In this assignment you will design an application that you will then implement using the Java EE platform in the subsequent programming assignment. The design and implementation of the Java EE application is to be undertaken in groups of 2-4 students.
 
 The main requirements for the application is provided below. In addition, you will find an example design document for a phone book application.  Use this design document as a template for your own design document.
 
@@ -71,31 +71,27 @@ In `User Data Screen` (see figure below) a user can register as a new member, ch
 
 ![](assets/OpenPhoneBook_S3.png)
 
-#### The Auction Application
+#### The OpenIoT Exchange Application
 
-This is the application that you are required to design and implement.
+Today still more embedded devices gets connected to the Internet, and a significant number of these devices provide sensing capabilities for collecting data (e.g., temperature, humidity, electricity metering) or actuator capabilities for control (e.g., switching light on/off, opening/closing valves).
 
-The requirements below may be incomplete and it is your task to design a useful application so try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either.
+The aim of the open IoT exchange application is to provide a service for Internet-of-things (IoT), where users can offer the data and capabilities of their IoT devices to other users. For instance, a user may have a temperature device that other users could be interested in obtaining data from. Potentially, users may also offer use of their devices for control purposes.
 
-Keep in mind that you have to implement the application in the three subsequent programming assignments.
+The requirements below may be incomplete, and it is your task to design a useful application. So it is important to try to find a proper balance in terms of the features that you want to support. The application should not be too complex and not too simple either. Keep in mind that you have to implement the application in the subsequent programming assignments.
 
-You are given the following requirements and assumptions concerning the application
+You are given the following main requirements and assumptions concerning the application
 
-1. Design an auction place where sellers can display product catalogs and where customers (i.e., bidders) can search for products.
-2. A product description should contain the following information:
-    * Product name, picture, features and product rating
-    * Customers feedback
-    * Current bid
-    * Time remaining to close the bidding
-    * Contact information of sellers (e.g. name, phone and email)   
-    * Sellers ratings
-3. Product must be in published status before they are visible by the customers.
-4. Products that are in published status are listed in the auction place starting with the oldest entries on top.
-5. Customers can filter products by category and free text search.
-6. Customers must login before they can place a bid.
-7. Customers can bid for a product by placing a bid higher than the current bid.
-8. Once sold to a customer, the customer can provide feedback for the product.
+1. Design an open IoT exchange where users can register their IoT devices, and where other users can search for IoT devices.
+2. A device description should contain (at least) the following information:
+    * Device name and picture
+    * A list of tags/categories capturing capabilities of the device
+    * A URL where the devices provide its data and/or service control service
+    * Current status of the device (online, offline, available, not available, ...)
+    * Feedback from other users that have used the service provided by the device
+3. IoT devices (sensors or actuators) must be in a published status before they are available for other users
+4. Users can filter devices by tags/categories and free text search.
+5. Users must login before they can register devices, make devices available, and before they can access other devices.
+6. Users can register for using a particular devices, and must then be approved by the owner of the device before it can be accessed.
+7. Once a user de-registers from using a device, the user can provide some feedback on the service provided by the device.
 
-Note that you are not required to process payment gateways to complete the purchase.
-
-An optional requirement, if you like to enhance the application, is that a bidder can create an event for automatic bidding: a bidder might configure an event such as: *Keep bidding for a product until it reaches 6500 NOK*.
+An optional requirement, if you like to enhance the application. Extend the design so that users can purchase data and control services offered by other users. Note that you are not required to process payment gateways to complete the purchases.
