@@ -52,7 +52,7 @@ The application consists of three screens. Only logged-in users can search for p
 
 ##### User Screens
 
-The user screen mock-ups is intended to prototype the application and give a better feeling how the application will work. The user screens are created in HTML. At the design stage you may use any graphic program to create and sketch the mock-up screens.
+The user screen mock-ups is intended to prototype the application and give a better feeling how the application will work.
 
 In `Login Screen` (see figure below) you can enter the application or be forwarded to a page were you can register as new user.
 
@@ -70,6 +70,8 @@ In `User Data Screen` (see figure below) a user can register as a new member, ch
 * Phone number <1> of Address <1> is not numeric.
 
 ![](assets/OpenPhoneBook_S3.png)
+
+At the design stage you may use any graphic program to create and sketch the mock-up screens. You may also use a mock-up tool, such as https://www.figma.com
 
 #### The OpenIoT Exchange Application
 
