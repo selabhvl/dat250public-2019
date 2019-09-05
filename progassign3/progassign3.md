@@ -1,31 +1,23 @@
 # DAT250: Programming Assignment 3
-## Enterprise Java Beans and SOAP
 
-In this assignment you will implement the business logic of the auction application partly developed in assignment 1 and 2. 
+## User Interface and Business Logic
 
-In addition, you will implement SOAP web service method to be provided by the application.
+In this assignment you will implement the front-end and the business logic of the application that was partly developed in assignments 2. You will also implement security mechanisms such as proper user authentication and a system for access control to the different parts of the application with an appropriate authorization scheme. Finally, you will implement a messaging service in the application that make use of the JMS technology.
 
-## Part 1 - Enterprise Java Beans (EJBs)
+## Part 1 - User interface
+
+Implement the user interface of the auction application as designed in assignment 1 using the JSF framework with Facelets. Y
+
+## Part 2 - Enterprise Java Beans (EJBs)
 
 Implement the business logic of the auction application using EJB session beans. Use the entity classes and the database access objects created in assignment 2 to interact with the database. This is covered in chapters 7-9 in the JAVA EE textbook.
 
-You will typically need EJBs covering the use cases that you identfifed as part of assignment 1.
+You will typically need EJBs covering the use cases that you identified as part of assignment 1 and which is able to service the user interface.
 
-## Part 2 - SOAP web service
+## Part 3 - Security
 
-Extend your application with functionality supporting access to the business logic by means of a SOAP web service. SOAP web services are covered in chapter 14 of the Java EE textbook.
+Using the standard security features of the Java EE framework, implement a working solution for authentication and access control / authorization in the application. This must include a secure login mechanism using password and username, and the solution should use database storage of the user credentials. In the application, there should be at least two different roles with corresponding access rights. Finally, all communication between clients and the server should be protected by using the https protocol.
 
-The SOAP-based web service should provide the following operations:
+## Part 3 - JMS
 
-- a method which returns a representation of the auction identified by an identifier.
-- a method which returns a representation of the auctions that the customer can still bid for.
-- a method which places a bid of a given amount in an auction and informs as to it is currently the highest bid.
-
-To test the SOAP service you may either:
-- Develop a test client application
-- Use [Postman](https://www.getpostman.com), [SoapUI](https://www.soapui.org) or similar.
-
-
-
-
-
+When a user is approved to use a registered device, the application needs to send a message to a Notify-subsystem implemented as a message-driven bean. You should add a JMS topic to your application in which this information can be published and received by a subscribing message-driven bean. The message-driven bean should sent a message to dweet.io via REST similar to the functionality of the advanced tweet example application.
