@@ -1,16 +1,14 @@
 # DAT250: Programming Assignment 3
 
-## User Interface and Business Logic
-
-In this assignment you will implement the front-end and the business logic of the application that was partly developed in assignments 2. You will also implement security mechanisms such as proper user authentication and a system for access control to the different parts of the application with an appropriate authorization scheme. Finally, you will implement a messaging service in the application that make use of the JMS technology.
+In this assignment you will implement the front-end and the business logic of the application that was partly developed in assignment 2. You will also implement security mechanisms such as proper user authentication and a system for access control to the different parts of the application with an appropriate authorization scheme. Finally, you will implement a messaging service in the application that make use of the JMS technology.
 
 ## Part 1 - User interface
 
 Implement the user interface of the OpenIoT application as designed in assignment 1 using the JSF framework with Facelets.
 
-## Part 2 - Enterprise Java Beans (EJBs)
+## Part 2 - Business Logic
 
-Implement the business logic of the OpenIoT application using EJB session beans. Use the entity classes and the database access objects created in assignment 2 to interact with the database. This is covered in chapters 7-9 in the JAVA EE textbook.
+Implement the business logic of the OpenIoT application using Enterprise Java Beans (EJBs). Use the entity classes and the database access objects created in assignment 2 to interact with the database. This is covered in chapters 7-9 in the JAVA EE textbook.
 
 You will typically need EJBs covering the use cases that you identified as part of assignment 1 and which is able to service the user interface.
 
