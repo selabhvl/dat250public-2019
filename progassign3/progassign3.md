@@ -16,6 +16,6 @@ You will typically need EJBs covering the use cases that you identified as part 
 
 Using the standard security features of the Java EE framework, implement a working solution for authentication and access control / authorization in the application. This must include a secure login mechanism using password and username, and the solution should use database storage of the user credentials. In the application, there should be at least two different roles with corresponding access rights. Finally, all communication between clients and the server should be protected by using the https protocol.
 
-## Part 4 - JMS
+## Part 4 - Messaging
 
-When a user is approved to use a registered device, the application needs to send a message to a Notify-subsystem implemented as a message-driven bean. You should add a JMS topic to your application in which this information can be published and received by a subscribing message-driven bean. The message-driven bean should sent a message to dweet.io via REST similar to the functionality of the advanced tweet example application.
+When a user is approved to use a registered device, the application needs to send a message to a Notify-subsystem implemented as a message-driven bean and the Java Message Service (JMS). You should add a JMS topic to your application in which this information can be published and received by a subscribing message-driven bean. The message-driven bean should sent a message to dweet.io via REST similar to the functionality of the advanced tweet example application.
