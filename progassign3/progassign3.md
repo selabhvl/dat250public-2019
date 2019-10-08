@@ -6,11 +6,11 @@ In this assignment you will implement the front-end and the business logic of th
 
 ## Part 1 - User interface
 
-Implement the user interface of the auction application as designed in assignment 1 using the JSF framework with Facelets. Y
+Implement the user interface of the OpenIoT application as designed in assignment 1 using the JSF framework with Facelets. Y
 
 ## Part 2 - Enterprise Java Beans (EJBs)
 
-Implement the business logic of the auction application using EJB session beans. Use the entity classes and the database access objects created in assignment 2 to interact with the database. This is covered in chapters 7-9 in the JAVA EE textbook.
+Implement the business logic of the OpenIoT application using EJB session beans. Use the entity classes and the database access objects created in assignment 2 to interact with the database. This is covered in chapters 7-9 in the JAVA EE textbook.
 
 You will typically need EJBs covering the use cases that you identified as part of assignment 1 and which is able to service the user interface.
 
